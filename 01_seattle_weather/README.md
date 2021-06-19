@@ -218,6 +218,8 @@ Ans: `select * from weather where date_weather >= '2000-12-01' and date_weather 
   </tr>
 </table>
 
+Ans: ```select avg(temp_max), date_trunc('year',date_weather) as txn_year from weather where date_weather >= '2000-01-01' group by txn_year order by txn_year;```
+
 3. **Get the standard deviation of the maximum temperature per year, from 2000 onward. Order by year (ascending)**
 
 <table border="1">
