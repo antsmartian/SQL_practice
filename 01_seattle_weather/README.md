@@ -135,7 +135,7 @@ will return 5 rows with just the month extracted from the `date_weather` column.
   </tr>
 </table>
 
-Ans: select * from weather where date_weather >= '2000-12-01' and date_weather <= '2000-12-15';
+Ans: `select * from weather where date_weather >= '2000-12-01' and date_weather <= '2000-12-15';`
 
 2. **Get the average maximum temperature for every year from the year 2000 onward. Order the results by year (ascending)**
 
