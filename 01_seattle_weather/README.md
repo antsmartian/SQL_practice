@@ -301,6 +301,8 @@ Ans: ```select avg(temp_max), date_trunc('year',date_weather) as txn_year from w
   </tr>
 </table>
 
+Ans: ```select stddev(temp_max), date_trunc('year',date_weather) as txn_year from weather where date_weather >= '2000-01-01' group by txn_year order by txn_year;```
+
 4. **What are the 10 hottest days on record? Take hottest to mean 'highest maximum temperature'.**
 
 <table border="1">
